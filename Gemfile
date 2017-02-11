@@ -17,7 +17,7 @@ gem 'listen'
 group :development, :test do
   gem 'faker'
   gem 'byebug'
-  gem 'web-console'
   gem 'spring'
 end
+gem 'web-console', group: :development
 gem 'rack-cors', :require => 'rack/cors'
