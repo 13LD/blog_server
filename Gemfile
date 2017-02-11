@@ -10,8 +10,10 @@ end
 gem 'rails', '~> 5.0.1'
 gem 'active_model_serializers', '~> 0.8.3' # NOTE: not the 0.9
 gem 'devise'
-gem 'sqlite3'
-gem 'sdoc'
+gem "sqlite3", :platform => [:ruby, :mswin, :mingw]
+
+# for JRuby
+gem "jdbc-sqlite3", :platform => :jrubygem 'sdoc'
 gem 'thin'
 gem 'listen'
 group :development, :test do
